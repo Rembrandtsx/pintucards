@@ -4,7 +4,7 @@ var chatInput = document.getElementById('chatInput');
 var socket = io();
 
 socket.on('addToChat', function(data) {
-  chatText.innerHTML += '<p>' + data + '</p>';
+  chatText.innerHTML += `<p> ${data} </p>`;
 });
 
 chatForm.onsubmit = function(e) {
